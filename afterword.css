@@ -207,3 +207,57 @@ backdrop-filter: blur(8px);
 
 }
 
+/* パステル背景専用 文字調整 */
+
+body.pastel {
+
+color: #454b66;
+
+}
+
+
+/* タイトル */
+
+body.pastel h1 {
+
+color: #59638f;
+
+}
+
+
+/* 小見出し */
+
+body.pastel h2 {
+
+color: #4d5678;
+
+}
+
+
+/* 通信番号 */
+
+body.pastel .message span {
+
+color: #6b75b5;
+
+}
+
+
+/* 補助文字 */
+
+body.pastel .message p {
+
+color: #68708a;
+
+}
+
+
+/* メッセージカード */
+
+body.pastel .message {
+
+background: rgba(255,255,255,0.55);
+
+border: 1px solid rgba(100,120,180,0.35);
+
+}
