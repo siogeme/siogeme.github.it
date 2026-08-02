@@ -174,3 +174,36 @@ font-size:18px;
 
 
 }
+
+
+/* message001専用 パステル宇宙背景 */
+
+body.pastel {
+
+color: #4b5268;
+
+background: linear-gradient(
+180deg,
+#d9d2ff 0%,
+#f7d7e8 35%,
+#dff5ff 70%,
+#c8e8ff 100%
+);
+
+background-attachment: fixed;
+
+}
+
+
+/* 専用メッセージ枠 */
+
+body.pastel .message {
+
+border: 1px solid rgba(130,150,220,0.4);
+
+background: rgba(255,255,255,0.35);
+
+backdrop-filter: blur(8px);
+
+}
+
