@@ -1,0 +1,70 @@
+body {
+margin:0;
+background:#050816;
+color:#dce8ff;
+font-family:"Yu Mincho", serif;
+}
+
+header {
+text-align:center;
+padding:80px 20px 50px;
+}
+
+h1 {
+font-size:40px;
+letter-spacing:0.3em;
+}
+
+.subtitle {
+color:#7fa8ff;
+letter-spacing:0.5em;
+font-size:12px;
+}
+
+
+main {
+max-width:700px;
+margin:auto;
+padding:20px;
+}
+
+
+.message {
+border:1px solid rgba(150,190,255,0.4);
+background:rgba(20,40,80,0.5);
+padding:35px;
+margin-bottom:40px;
+box-shadow:0 0 20px rgba(100,150,255,0.15);
+}
+
+
+.number {
+color:#7fc8ff;
+letter-spacing:0.2em;
+}
+
+
+.date {
+font-size:13px;
+color:#9aa8c7;
+}
+
+
+h2 {
+font-weight:normal;
+border-bottom:1px solid rgba(255,255,255,0.2);
+padding-bottom:10px;
+}
+
+
+.message p {
+line-height:2;
+}
+
+
+.back {
+display:block;
+text-align:center;
+color:white;
+text-decoration:none;
+}
