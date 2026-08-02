@@ -199,57 +199,72 @@ background-attachment: fixed;
 
 body.pastel .message {
 
-border: 1px solid rgba(130,150,220,0.4);
+position: relative;
 
-background: rgba(255,255,255,0.35);
+border: none;
 
-backdrop-filter: blur(8px);
+background: rgba(255,255,255,0.45);
+
+border-radius: 30px;
+
+padding: 35px;
+
+box-shadow:
+0 0 0 2px rgba(255,255,255,0.5),
+0 0 20px rgba(160,150,220,0.25);
+
+}
+
+
+/* レースの縁 */
+
+body.pastel .message::before {
+
+content:"";
+
+position:absolute;
+
+inset:8px;
+
+border:1px dashed rgba(150,140,200,0.35);
+
+border-radius:25px;
+
+pointer-events:none;
 
 }
 
 /* パステル背景専用 文字調整 */
 
-body.pastel {
-
-color: #454b66;
-
-}
-
-
-/* タイトル */
+/* 夢色ページの文字 */
 
 body.pastel h1 {
 
-color: #59638f;
+color: #6973a8;
 
 }
 
-
-/* 小見出し */
 
 body.pastel h2 {
 
-color: #4d5678;
+color: #555d86;
 
 }
 
-
-/* 通信番号 */
 
 body.pastel .message span {
 
-color: #6b75b5;
+color: #7d6fa8;
 
 }
 
-
-/* 補助文字 */
 
 body.pastel .message p {
 
-color: #68708a;
+color: #727b98;
 
 }
+
 
 
 /* メッセージカード */
