@@ -64,7 +64,28 @@ padding: 20px;
 
 
 
+.message {
 
+display: block;
+
+text-decoration: none;
+
+color: #ffffff;
+
+
+border: 1px solid rgba(120,220,255,0.5);
+
+background: rgba(20,40,70,0.5);
+
+
+padding: 30px;
+
+margin-bottom: 30px;
+
+
+transition: 0.3s;
+
+}
 
 
 
@@ -178,8 +199,10 @@ background-attachment: fixed;
 
 body.pastel .message {
 
+border: 1px solid rgba(130,150,220,0.4);
 position: relative;
 
+background: rgba(255,255,255,0.35);
 border: none;
 
 background: rgba(255,255,255,0.45);
@@ -188,13 +211,16 @@ border-radius: 30px;
 
 padding: 35px;
 
+backdrop-filter: blur(8px);
 box-shadow:
 0 0 0 2px rgba(255,255,255,0.5),
 0 0 20px rgba(160,150,220,0.25);
 
 }
 
+/* パステル背景専用 文字調整 */
 
+body.pastel {
 /* レースの縁 */
 
 body.pastel .message::before {
@@ -203,6 +229,7 @@ content:"";
 
 position:absolute;
 
+color: #454b66;
 inset:8px;
 
 border:1px dashed rgba(150,140,200,0.35);
@@ -215,52 +242,49 @@ pointer-events:none;
 
 /* パステル背景専用 文字調整 */
 
+/* タイトル */
 /* 夢色ページの文字 */
 
 body.pastel h1 {
 
+color: #59638f;
 color: #6973a8;
 
 }
 
 
+/* 小見出し */
+
 body.pastel h2 {
 
+color: #4d5678;
 color: #555d86;
 
 }
 
 
+/* 通信番号 */
+
 body.pastel .message span {
 
+color: #6b75b5;
 color: #7d6fa8;
 
 }
 
 
+/* 補助文字 */
+
 body.pastel .message p {
 
+color: #68708a;
 color: #727b98;
 
 }
 
-body.pastel .message {
 
-position: relative;
 
-border: none;
-
-background: rgba(255,255,255,0.45);
-
-border-radius: 30px;
-
-padding: 35px;
-
-box-shadow:
-0 0 0 2px rgba(255,255,255,0.5),
-0 0 20px rgba(160,150,220,0.25);
-
-}
+/* メッセージカード */
 
 body.pastel .message {
 
@@ -270,4 +294,37 @@ border: 1px solid rgba(100,120,180,0.35);
 
 }
 
+.home-button {
 
+display: block;
+
+width: fit-content;
+
+margin: 50px auto 30px;
+
+padding: 8px 20px;
+
+border-radius: 30px;
+
+color: #66708f;
+
+border: 1px solid rgba(120,140,190,0.4);
+
+text-decoration: none;
+
+font-size: 12px;
+
+letter-spacing: 0.15em;
+
+background: rgba(255,255,255,0.35);
+
+transition: 0.3s;
+
+}
+
+
+.home-button:hover {
+
+background: rgba(255,255,255,0.7);
+
+transform: translateY(-3px);
