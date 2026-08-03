@@ -244,100 +244,30 @@ color: #727b98;
 
 }
 
-/* message001専用 月と星のフレーム */
-
 body.pastel .message {
 
 position: relative;
 
-max-width: 700px;
-margin: 60px auto;
+border: none;
 
-padding: 80px;
+background: rgba(255,255,255,0.45);
 
-box-sizing: border-box;
+border-radius: 30px;
 
-background: rgba(255,255,255,0.75);
-
-border: 3px solid #d7c16a;
-
-border-radius: 18px;
+padding: 35px;
 
 box-shadow:
-0 0 30px rgba(180,220,255,0.4);
+0 0 0 2px rgba(255,255,255,0.5),
+0 0 20px rgba(160,150,220,0.25);
 
 }
-
-
-/* 内側のレース風枠 */
-
-body.pastel .message::before {
-
-content:"";
-
-position:absolute;
-
-inset:28px;
-
-border:2px solid #b9ddf4;
-
-border-radius:14px;
-
-pointer-events:none;
-
-}
-
-
-/* 文章を枠より前へ */
-
-body.pastel .message > * {
-
-position:relative;
-
-z-index:2;
-
-}
-
-
-/* 四隅装飾 */
-
-body.pastel .message::after {
-
-content:"✦ ☾ ✦";
-
-position:absolute;
-
-left:0;
-right:0;
-
-top:12px;
-
-text-align:center;
-
-font-size:20px;
-
-color:#e7c957;
-
-letter-spacing:70px;
-
-z-index:3;
-
-}
-
-
-/* 余白調整（スマホ） */
-
-@media screen and (max-width:600px){
 
 body.pastel .message {
 
-padding:50px 30px;
+background: rgba(255,255,255,0.55);
 
-margin:40px 15px;
-
-}
+border: 1px solid rgba(100,120,180,0.35);
 
 }
-
 
 
