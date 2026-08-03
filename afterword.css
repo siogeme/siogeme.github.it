@@ -173,43 +173,70 @@ font-size:18px;
 
 }
 
-home-button {
+/* ホームへ戻るボタン */
+
+.home-button {
 
 display:block;
 
 width:fit-content;
 
-margin:50px auto 30px;
+margin:60px auto 40px;
 
-padding:8px 20px;
+padding:10px 28px;
 
-border-radius:30px;
+border-radius:50px;
 
 color:#8be7ff;
 
-border:1px solid rgba(120,220,255,0.5);
+border:1px solid rgba(139,231,255,0.45);
+
+background:rgba(5,8,23,0.45);
 
 text-decoration:none;
 
-font-size:12px;
+font-size:11px;
 
-letter-spacing:0.15em;
-
-background:rgba(20,40,70,0.5);
+letter-spacing:0.3em;
 
 transition:0.3s;
+
+position:relative;
+
+}
+
+
+/* 光る演出 */
+
+.home-button::before {
+
+content:"";
+
+position:absolute;
+
+inset:-4px;
+
+border-radius:50px;
+
+background:rgba(139,231,255,0.15);
+
+filter:blur(8px);
+
+z-index:-1;
 
 }
 
 
 .home-button:hover {
 
-box-shadow:
-0 0 15px rgba(80,220,255,0.7);
-
 transform:translateY(-3px);
 
+box-shadow:
+
+0 0 18px rgba(139,231,255,0.5);
+
 }
+
 
 body.pastel .message h2 {
 
