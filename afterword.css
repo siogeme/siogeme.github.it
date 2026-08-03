@@ -244,228 +244,100 @@ color: #727b98;
 
 }
 
-
-
-/* メッセージカード */
+/* message001専用 月と星のフレーム */
 
 body.pastel .message {
 
-background: rgba(255,255,255,0.55);
+position: relative;
 
-border: 1px solid rgba(100,120,180,0.35);
+max-width: 700px;
+margin: 60px auto;
 
-}
+padding: 80px;
 
-.home-button {
+box-sizing: border-box;
 
-display: block;
+background: rgba(255,255,255,0.75);
 
-width: fit-content;
+border: 3px solid #d7c16a;
 
-margin: 50px auto 30px;
-
-padding: 8px 20px;
-
-border-radius: 30px;
-
-color: #66708f;
-
-border: 1px solid rgba(120,140,190,0.4);
-
-text-decoration: none;
-
-font-size: 12px;
-
-letter-spacing: 0.15em;
-
-background: rgba(255,255,255,0.35);
-
-transition: 0.3s;
-
-}
-
-
-.home-button:hover {
-
-afterword-frame{
-
-width:700px;
-max-width:95%;
-margin:60px auto;
-
-position:relative;
-
-padding:80px;
-
-border:3px solid #d7c16a;
-
-border-radius:18px;
-
-background:#fffefb;
+border-radius: 18px;
 
 box-shadow:
-0 0 30px rgba(180,220,255,.4);
+0 0 30px rgba(180,220,255,0.4);
+
 }
 
 
-/* 内側の枠 */
+/* 内側のレース風枠 */
 
-.afterword-frame::before{
+body.pastel .message::before {
 
 content:"";
 
 position:absolute;
 
-top:28px;
-left:28px;
-right:28px;
-bottom:28px;
+inset:28px;
 
 border:2px solid #b9ddf4;
 
 border-radius:14px;
 
+pointer-events:none;
+
 }
 
 
-/* 四隅 */
+/* 文章を枠より前へ */
 
-.corner{
-
-width:55px;
-height:55px;
-
-border:3px solid #b9ddf4;
-
-position:absolute;
-}
-
-.tl{
-top:10px;
-left:10px;
-border-right:none;
-border-bottom:none;
-}
-
-.tr{
-top:10px;
-right:10px;
-border-left:none;
-border-bottom:none;
-}
-
-.bl{
-bottom:10px;
-left:10px;
-border-right:none;
-border-top:none;
-}
-
-.br{
-bottom:10px;
-right:10px;
-border-left:none;
-border-top:none;
-}
-
-
-/* 月 */
-
-.moon{
-
-width:16px;
-height:16px;
-
-background:#f3e6a4;
-
-border-radius:50%;
-
-position:absolute;
-
-left:50%;
-
-transform:translateX(-50%);
-}
-
-.top{
-
-top:18px;
-}
-
-.bottom{
-
-bottom:18px;
-}
-
-
-/* 星 */
-
-.star{
-
-color:#e7c957;
-
-position:absolute;
-
-font-size:18px;
-}
-
-.s1{
-top:55px;
-left:50%;
-margin-left:-80px;
-}
-
-.s2{
-top:55px;
-right:50%;
-margin-right:-80px;
-}
-
-.s3{
-bottom:55px;
-left:50%;
-margin-left:-80px;
-}
-
-.s4{
-bottom:55px;
-right:50%;
-margin-right:-80px;
-}
-
-
-.afterword-content{
+body.pastel .message > * {
 
 position:relative;
 
 z-index:2;
 
-line-height:2;
-
-color:#555;
-
 }
 
 
-.afterword-content h1{
+/* 四隅装飾 */
+
+body.pastel .message::after {
+
+content:"✦ ☾ ✦";
+
+position:absolute;
+
+left:0;
+right:0;
+
+top:12px;
 
 text-align:center;
 
-color:#87c9eb;
+font-size:20px;
 
-margin-bottom:40px;
+color:#e7c957;
+
+letter-spacing:70px;
+
+z-index:3;
+
+}
+
+
+/* 余白調整（スマホ） */
+
+@media screen and (max-width:600px){
+
+body.pastel .message {
+
+padding:50px 30px;
+
+margin:40px 15px;
+
+}
+
 }
 
 
-.afterword-content p{
 
-text-indent:1em;
-
-margin-bottom:1.5em;
-}
-
-background: rgba(255,255,255,0.7);
-
-transform: translateY(-3px);
-
-}
